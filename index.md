@@ -5,7 +5,9 @@ title: "Multi-Domain Evaluation of Semantic Segmentation (MESS)"
 
 The MESS benchmark enables a holistic evaluation of semantic segmentation models on a variety of domains and datasets. The collection is based on a developed taxonomy and 120 classified datasets. The 22 selected MESS datasets are highlighted bold in the following figure. You find detail of the datasets, including links and licences, in this [overview](https://github.com/blumenstiel/MESS/blob/main/mess/DATASETS.md).    
 
-![Dataset classification](assets/images/classifications_lines.svg)
+<center>
+<img src="assets/images/classifications_lines.svg">
+</center>
 
 ---
 
@@ -23,7 +25,9 @@ import mess.datasets
 
 You find the results of all evaluated models at our [leaderboard](https://blumenstiel.github.io/mess-benchmark/).
 
-![Results](assets/images/radar_plot_split_all_log.svg)
+<center>
+<img src="assets/images/radar_plot_split_all_log.svg">
+</center>
 
 ---
 
