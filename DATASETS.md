@@ -4,4 +4,6 @@ permalink: "/datasets/"
 layout: page
 ---
 
-# Datasets
+# Taxonomy
+
+![Dataset classification](assets/images/classifications_lines.pdf)
