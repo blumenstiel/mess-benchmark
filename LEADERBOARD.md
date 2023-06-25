@@ -7,7 +7,9 @@ layout: page
 Our evaluation focus on zero-shot transfer models as they are designed to generalize to unseen datasets. We evaluated eight model architectures with publicly available weights on the MESS benchmark.
 We present the aggregated results in the following table and refer to the supplementary material of our paper for the dataset-wise results.
 
-# Zero-shot semantic segmentation
+# Domain results
+
+## Zero-shot semantic segmentation
 
 | Model                                                                        |   General |   Earth Monitoring |   Medical Sciences | Engineering |   Agriculture and Biology |   Mean |
 |:-----------------------------------------------------------------------------|----------:|-------------------:|-------------------:|------------:|--------------------------:|-------:|
@@ -31,6 +33,21 @@ We present the aggregated results in the following table and refer to the supple
 
 <small><sup>2</sup> Supervised are recent supervised models for each dataset individually. We refer to our paper for the details.</small>
 
-# Zero-shot point-to-mask semantic segmentation
+## Zero-shot point-to-mask semantic segmentation
 
-# Zero-shot box-to-mask semantic segmentation
+## Zero-shot box-to-mask semantic segmentation
+
+## Dataset results
+
+## Zero-shot semantic segmentation
+
+| Model       | BDD100K | Dark Zurich | MHP v1 | FoodSeg103 | ATLANTIS |  DRAM | iSAID | ISPRS Potsdam | WorldFloods | FloodNet | UAVid | Kvasir-Instrument | CHASE DB1 | CryoNuSeg | PAXRay-4 | Corrosion CS | DeepCrack | PST900 | ZeroWaste-f | SUIM | CUB-200 | CWFID |   Mean |
+|:------------|--------:|------------:|-------:|-----------:|---------:|------:|------:|--------------:|------------:|---------:|------:|------------------:|----------:|----------:|---------:|-------------:|----------:|-------:|------------:|-----:|--------:|------:|-------:|
+| Random<sup>1</sup> |    _1.48_ | _1.31_ | 1.27 | 0.23 |     0.56 |  2.16 | 0.56 |          8.02 |       18.43 |     3.39 | 5.18 | 27.99 |     27.25 |     31.25 |    31.53 |          9.3 | 26.52 | 4.52 | 6.49 | 5.3 | 0.06 | 13.08 |  10.27 |
+| Best supervised<sup>2</sup> | **44.8** | 63.9 | 50.0 | 45.1 |    42.22 | 45.71 | 65.3 |         87.56 |       92.71 |    82.22 | 67.8 | 93.7 |     97.05 |     73.45 |    93.77 |        49.92 | 85.9 | 82.3 | 52.5 | 74.0 | 84.6 | 87.23 |  70.99 |
+| [ZSSeg-B](https://github.com/MendelXu/zsseg.baseline) | 32.36 | 16.86 | 7.08 | 8.17 | 22.19 | 33.19 | 3.8 | 11.57 | 23.25 | 20.98 | 30.27 | 46.93 | 37.0 | 38.7 | 44.66 | 3.06 | 25.39 | 18.76 | 8.78 | 30.16 | 4.35 | 32.46 |  22.73 |
+
+
+## Zero-shot point-to-mask semantic segmentation
+
+## Zero-shot box-to-mask semantic segmentation
