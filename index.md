@@ -24,9 +24,9 @@ import mess.datasets
 
 ---
 
-## Leaderboard
+## Benchmark results
 
-You find the results of all evaluated models in the [leaderboard](https://blumenstiel.github.io/mess-benchmark/leaderboard/).
+You find the results of all evaluated models in the [leaderboard](https://blumenstiel.github.io/mess-benchmark/results/).
 
 <center>
 <img src="assets/images/radar_plot_split_all_log.svg">

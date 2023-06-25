@@ -4,15 +4,16 @@ permalink: "/results/"
 layout: page
 ---
 
-## Zero-shot semantic segmentation
+Our evaluation currently focus on zero-shot transfer models as they are designed to generalize to unseen datasets. Links to the models are provided at the end of the page. 
+All reported results are using the metric mean class-wise Intersection over Uniion (mIoU). The results include mean values per domain and for each dataset separate.
+The models are grouped by their size and sorted by their release date. The best-performing models within their group are highlighted in bold, the second-best are underlined. 
+We provide random and best supervised results as a lower and upper bound.
 
-Our evaluation currently focus on zero-shot transfer models as they are designed to generalize to unseen datasets. Links to the models are provided at the end of the page.
+## Zero-shot semantic segmentation
 
 ### Domain results
 
-mIoU results averaged by the dataset domains and grouped by model size. The best-performing models are highlighted in bold, the second-best are underlined. We provide random and best supervised results as a lower and upper bound.
-
-| Dataset                       |   <nobr>General</nobr> | <nobr>Earth Monitoring</nobr>   | <nobr>Medical Sciences</nobr>   | <nobr>Engineering</nobr>   | <nobr>Agriculture and Biology</nobr>   |   <nobr>Mean</nobr> |
+| Model                       |   <nobr>General</nobr> | <nobr>Earth Monitoring</nobr>   | <nobr>Medical Sciences</nobr>   | <nobr>Engineering</nobr>   | <nobr>Agriculture and Biology</nobr>   |   <nobr>Mean</nobr> |
 |:------------------------------|-----------------------:|--------------------------------:|--------------------------------:|---------------------------:|---------------------------------------:|--------------------:|
 | <nobr>Random<sup>1</sup></nobr>         | *1.17*                 | *7.11*                          | *29.51*                         | *11.71*                    | *6.14*                                 |             *10.27* |
 | *Best supervised<sup>2</sup>* |                *49.15* |              *79.12* |              *89.49* |       *67.66* |                     *81.94* |             *71.13* |
@@ -32,13 +33,9 @@ mIoU results averaged by the dataset domains and grouped by model size. The best
 | <nobr>CAT-Seg-H</nobr>      | <u>37.98</u>           | 37.74                           | 34.65                           | <u>29.04</u>               | **37.76**                              |        <u>35.66</u> |
 | <nobr>Grounded-SAM-H</nobr> | 30.27                  | 26.44                           | 38.45                           | 28.16                      | 17.67                                  |               28.78 |
 
-<small><sup>1</sup> Random is a lower bound. The values represent the expected mIoU from predictions with uniform class distribution.</small>
-
-<small><sup>2</sup> Best supervised are recent supervised models for each dataset individually. We refer to our paper for the details.</small>
-
 ### Dataset results
 
-| Dataset                       | <nobr>BDD100K</nobr>   | <nobr>Dark Zurich</nobr>   | <nobr>MHP v1</nobr>   | <nobr>FoodSeg103</nobr>   | <nobr>ATLANTIS</nobr>   | <nobr>DRAM</nobr>   | <nobr>iSAID</nobr>   | <nobr>ISPRS Potsdam</nobr>   | <nobr>WorldFloods</nobr>   | <nobr>FloodNet</nobr>   | <nobr>UAVid</nobr>   | <nobr>Kvasir-Instrument</nobr>   | <nobr>CHASE DB1</nobr>   | <nobr>CryoNuSeg</nobr>   | <nobr>PAXRay-4</nobr>   | <nobr>Corrosion CS</nobr>   | <nobr>DeepCrack</nobr>   | <nobr>PST900</nobr>   | <nobr>ZeroWaste-f</nobr>   | <nobr>SUIM</nobr>   | <nobr>CUB-200</nobr>   | <nobr>CWFID</nobr>   |   <nobr>Mean</nobr> |
+| Model                       | <nobr>BDD100K</nobr>   | <nobr>Dark Zurich</nobr>   | <nobr>MHP v1</nobr>   | <nobr>FoodSeg103</nobr>   | <nobr>ATLANTIS</nobr>   | <nobr>DRAM</nobr>   | <nobr>iSAID</nobr>   | <nobr>ISPRS Potsdam</nobr>   | <nobr>WorldFloods</nobr>   | <nobr>FloodNet</nobr>   | <nobr>UAVid</nobr>   | <nobr>Kvasir-Instrument</nobr>   | <nobr>CHASE DB1</nobr>   | <nobr>CryoNuSeg</nobr>   | <nobr>PAXRay-4</nobr>   | <nobr>Corrosion CS</nobr>   | <nobr>DeepCrack</nobr>   | <nobr>PST900</nobr>   | <nobr>ZeroWaste-f</nobr>   | <nobr>SUIM</nobr>   | <nobr>CUB-200</nobr>   | <nobr>CWFID</nobr>   |   <nobr>Mean</nobr> |
 |:------------------------------|-----------------------:|---------------------------:|----------------------:|--------------------------:|------------------------:|--------------------:|---------------------:|-----------------------------:|---------------------------:|------------------------:|---------------------:|---------------------------------:|-------------------------:|-------------------------:|------------------------:|----------------------------:|-------------------------:|----------------------:|---------------------------:|--------------------:|-----------------------:|---------------------:|--------------------:|
 | *Random<sup>1</sup>*          | *1.48*                 | *1.31*                     | *1.27*                | *0.23*                    | *0.56*                  | *2.16*              | *0.56*               | *8.02*                       | *18.43*                    | *3.39*                  | *5.18*               | *27.99*                          | *27.25*                  | *31.25*                  | *31.53*                 | *9.3*                       | *26.52*                  | *4.52*                | *6.49*                     | *5.3*               | *0.06*                 | *13.08*              |             *10.27* |
 | *Best supervised<sup>2</sup>* | *44.8* | *63.9* | *50.0* | *45.1* |    *42.22* | *45.71* | *65.3* |         *87.56* |       *92.71* |    *82.22* | *67.8* | *93.7* |     *97.05* |     *73.45* |    *93.77* |        *49.92* | *85.9* | *82.3* | *52.5* | *74.0* | *84.6* | *87.23* |             *70.99* |
@@ -66,7 +63,7 @@ Results with visual oracle prompts in a point-to-mask or box-to-mask setting. Se
 
 ### Domain results
 
-| Dataset                       |   <nobr>General</nobr> | <nobr>Earth Monitoring</nobr>   | <nobr>Medical Sciences</nobr>   | <nobr>Engineering</nobr>   | <nobr>Agriculture and Biology</nobr>   |   <nobr>Mean</nobr> |
+| Model                       |   <nobr>General</nobr> | <nobr>Earth Monitoring</nobr>   | <nobr>Medical Sciences</nobr>   | <nobr>Engineering</nobr>   | <nobr>Agriculture and Biology</nobr>   |   <nobr>Mean</nobr> |
 |:------------------------------|-----------------------:|--------------------------------:|--------------------------------:|---------------------------:|---------------------------------------:|--------------------:|
 | *Random<sup>1</sup>*                      |                 *1.17* | *7.11*                          | *29.51*                         | *11.71*                    | *6.14*                                 |             *10.27* |
 | *Best supervised<sup>2</sup>* |                *49.15* |              *79.12* |              *89.49* |       *67.66* |                     *81.94* |             *71.13* |
@@ -82,7 +79,7 @@ Results with visual oracle prompts in a point-to-mask or box-to-mask setting. Se
 
 ### Dataset results
 
-| Dataset                               | <nobr>BDD100K</nobr>   | <nobr>Dark Zurich</nobr>   | <nobr>MHP v1</nobr>   | <nobr>FoodSeg103</nobr>   | <nobr>ATLANTIS</nobr>   | <nobr>DRAM</nobr>   | <nobr>iSAID</nobr>   | <nobr>ISPRS Potsdam</nobr>   | <nobr>WorldFloods</nobr>   | <nobr>FloodNet</nobr>   | <nobr>UAVid</nobr>   | <nobr>Kvasir-Instrument</nobr>   | <nobr>CHASE DB1</nobr>   | <nobr>CryoNuSeg</nobr>   | <nobr>PAXRay-4</nobr>   | <nobr>Corrosion CS</nobr>   | <nobr>DeepCrack</nobr>   | <nobr>PST900</nobr>   | <nobr>ZeroWaste-f</nobr>   | <nobr>SUIM</nobr>   | <nobr>CUB-200</nobr>   | <nobr>CWFID</nobr>   |   <nobr>Mean</nobr> |
+| Model                                 | <nobr>BDD100K</nobr>   | <nobr>Dark Zurich</nobr>   | <nobr>MHP v1</nobr>   | <nobr>FoodSeg103</nobr>   | <nobr>ATLANTIS</nobr>   | <nobr>DRAM</nobr>   | <nobr>iSAID</nobr>   | <nobr>ISPRS Potsdam</nobr>   | <nobr>WorldFloods</nobr>   | <nobr>FloodNet</nobr>   | <nobr>UAVid</nobr>   | <nobr>Kvasir-Instrument</nobr>   | <nobr>CHASE DB1</nobr>   | <nobr>CryoNuSeg</nobr>   | <nobr>PAXRay-4</nobr>   | <nobr>Corrosion CS</nobr>   | <nobr>DeepCrack</nobr>   | <nobr>PST900</nobr>   | <nobr>ZeroWaste-f</nobr>   | <nobr>SUIM</nobr>   | <nobr>CUB-200</nobr>   | <nobr>CWFID</nobr>   |   <nobr>Mean</nobr> |
 |:--------------------------------------|-----------------------:|---------------------------:|----------------------:|--------------------------:|------------------------:|--------------------:|---------------------:|-----------------------------:|---------------------------:|------------------------:|---------------------:|---------------------------------:|-------------------------:|-------------------------:|------------------------:|----------------------------:|-------------------------:|----------------------:|---------------------------:|--------------------:|-----------------------:|---------------------:|--------------------:|
 | *Random<sup>1</sup>*                  | *1.48*                 | *1.31*                     | *1.27*                | *0.23*                    | *0.56*                  | *2.16*              | *0.56*               | *8.02*                       | *18.43*                    | *3.39*                  | *5.18*               | *27.99*                          | *27.25*                  | *31.25*                  | *31.53*                 | *9.3*                       | *26.52*                  | *4.52*                | *6.49*                     | *5.3*               | *0.06*                 | *13.08*              |             *10.27* |
 | *Best supervised<sup>2</sup>*         | *44.8* | *63.9* | *50.0* | *45.1* |    *42.22* | *45.71* | *65.3* |         *87.56* |       *92.71* |    *82.22* | *67.8* | *93.7* |     *97.05* |     *73.45* |    *93.77* |        *49.92* | *85.9* | *82.3* | *52.5* | *74.0* | *84.6* | *87.23* |             *70.99* |
@@ -115,3 +112,7 @@ Links to the official implementations and the code adaptations for the MESS benc
 | SAM | <https://github.com/facebookresearch/segment-anything>       | <https://github.com/blumenstiel/SAM-MESS>            | 
 
 Feel free to add your results by contacting us via email.
+
+<small><sup>1</sup> Random is a lower bound. The values represent the expected mIoU from predictions with uniform class distribution.</small>
+
+<small><sup>2</sup> Best supervised are recent supervised models for each dataset individually. We refer to our paper for the details.</small>
