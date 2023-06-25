@@ -1,6 +1,6 @@
 title: "MESS Benchmark"
 author: "Benedikt Blumenstiel"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+description: "Multi-domain Evaluation of Semantic Segmentation"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -16,13 +16,13 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "HOME.md"}
   - {file: "DATASETS.md"}
   - {file: "LEADERBOARD.md"}
+  - {title: Toolkit, icon: github, url: "https://github.com/blumenstiel/MESS"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:benedikt.blumenstiel@kit.edu"}
-  - {title: Github, icon: github, url: "https://github.com/blumenstiel/MESS"}
+  - {title: Toolkit, icon: github, url: "https://github.com/blumenstiel/MESS"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/

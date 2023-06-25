@@ -4,6 +4,14 @@ permalink: "/datasets/"
 layout: page
 ---
 
-# Taxonomy
+![Dataset classification](assets/images/classifications_lines.svg)
 
-![Dataset classification](assets/images/classifications_lines.pdf)
+## Dataset selection
+
+This collection is based on the developed taxonomy.
+
+## Datasets overview
+
+| Dataset | Use case | Link | License                                  | Split | No. of images |
+| --- |----------| --- |------------------------------------------| --- |------|
+| BDD100K | Driving  | [Link](https://bdd-data.berkeley.edu/) | [custom](https://bdd-data.berkeley.edu/) | val | 1000 |

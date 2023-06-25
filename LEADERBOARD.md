@@ -27,9 +27,9 @@ We present the aggregated results in the following table and refer to the supple
 | [CAT-Seg-H](https://github.com/KU-CVLAB/CAT-Seg)                             |     37.98 |              37.74 |              34.65 |       29.04 |                     37.76 |  35.66 |
 | [Grounded-SAM-H](https://github.com/IDEA-Research/Grounded-Segment-Anything) |     30.27 |              26.44 |              38.45 |       28.16 |                     17.67 |  28.78 |
 
-<sup>1</sup> Random is a lower bound. The values represent the expected mIoU from predictions with uniform class distribution.
+<small><sup>1</sup> Random is a lower bound. The values represent the expected mIoU from predictions with uniform class distribution.</small>
 
-<sup>2</sup> Supervised are recent supervised models for each dataset individually. We refer to our paper for the details.
+<small><sup>2</sup> Supervised are recent supervised models for each dataset individually. We refer to our paper for the details.</small>
 
 # Zero-shot point-to-mask semantic segmentation
 
