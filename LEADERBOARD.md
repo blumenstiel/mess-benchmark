@@ -5,8 +5,8 @@ layout: page
 ---
 
 Our evaluation currently focus on zero-shot transfer models as they are designed to generalize to unseen datasets. Links to the models are provided at the end of the page. 
-All reported results are using the metric mean class-wise Intersection over Uniion (mIoU). The results include mean values per domain and for each dataset separate.
-The models are grouped by their size and sorted by their release date. The best-performing models within their group are highlighted in bold, the second-best are underlined. 
+The results include mIoU values averaged by the dataset domains as well as for each dataset separate.
+The models are grouped by their size and sorted by the release date. The best-performing models within their group are highlighted in bold, the second-best are underlined. 
 We provide random and best supervised results as a lower and upper bound.
 
 ## Zero-shot semantic segmentation
