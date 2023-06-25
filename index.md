@@ -3,11 +3,7 @@ layout: page
 title: "Multi-Domain Evaluation of Semantic Segmentation (MESS)"
 ---
 
-The MESS benchmark enables a holistic evaluation of semantic segmentation models on a variety of domains and datasets. The MESS benchmark includes 22 datasets for different domains like medicine, engineering, earth monitoring, biology, and agriculture.
-
-## Datasets
-
-The MESS benchmark represents different domains and characteristics relevant to semantic segmentation. For a holistic evaluation, we developed the following taxonomy and classified 120 datasets. The 22 selected MESS datasets are highlighted bold in the following figure. You find detail of the datasets, including the links and licences, in this [0verview](https://github.com/blumenstiel/MESS/blob/main/mess/DATASETS.md).    
+The MESS benchmark enables a holistic evaluation of semantic segmentation models on a variety of domains and datasets. The collection is based on a developed taxonomy and 120 classified datasets. The 22 selected MESS datasets are highlighted bold in the following figure. You find detail of the datasets, including links and licences, in this [overview](https://github.com/blumenstiel/MESS/blob/main/mess/DATASETS.md).    
 
 ![Dataset classification](assets/images/classifications_lines.svg)
 
@@ -45,7 +41,7 @@ Please cite our paper if you use the MESS benchmark.
 
 ```
 @article{MESSBenchmark2023,
-  title={{What a MESS: Multi-domain Evaluation of Zero-shot Semantic Segmentation}},
+  title={{{What a MESS: Multi-domain Evaluation of Zero-shot Semantic Segmentation}}},
   author={Blumenstiel, Benedikt and Jakubik, Johannes and Kühne, Hilde and Vössing, Michael},
   year={2023}
 }
