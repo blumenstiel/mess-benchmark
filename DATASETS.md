@@ -4,7 +4,7 @@ permalink: "/datasets/"
 layout: page
 ---
 
-![Dataset classification](assets/images/classifications_lines.svg)
+
 
 ## Dataset selection
 

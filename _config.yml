@@ -1,6 +1,6 @@
 title: "MESS Benchmark"
 author: "Benedikt Blumenstiel"
-description: "Multi-Domain Evaluation of Semantic Segmentation"
+description: "Any questions or ideas? Feel free to open an github issue or contact us via email."
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -16,13 +16,14 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "DATASETS.md"}
+#  - {file: "DATASETS.md"}
   - {file: "LEADERBOARD.md"}
-  - {title: Toolkit, icon: github, url: "https://github.com/blumenstiel/MESS"}
+  - {title: Paper, url: "https://arxiv.org/"}
+  - {title: Toolkit, url: "https://github.com/blumenstiel/MESS"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:benedikt.blumenstiel@kit.edu"}
   - {title: Toolkit, icon: github, url: "https://github.com/blumenstiel/MESS"}
+  - {title: Mail, icon: envelope, url: "mailto:benedikt.blumenstiel@kit.edu"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
