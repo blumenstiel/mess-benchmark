@@ -26,7 +26,7 @@ import mess.datasets
 
 ## Benchmark results
 
-You find the results of all evaluated models in the [leaderboard](https://blumenstiel.github.io/mess-benchmark/results/).
+You find the results of all evaluated models in the [leaderboard](https://blumenstiel.github.io/mess-benchmark/leaderboard/).
 
 <center>
 <img src="assets/images/radar_plot_split_all_log.svg">
@@ -38,7 +38,7 @@ You find the results of all evaluated models in the [leaderboard](https://blumen
 
 **<center>What a MESS: Multi-Domain Evaluation of Zero-Shot Semantic Segmentation</center>**
 
-<center>Benedikt Blumenstiel*,  Johannes Jakubik*,  Hilde Kühne,    Michael Vössing</center>
+<center>Benedikt Blumenstiel*,  Johannes Jakubik*,  Hilde Kühne,  Michael Vössing</center>
 
 <center><small>* Equal contributions</small></center>
 

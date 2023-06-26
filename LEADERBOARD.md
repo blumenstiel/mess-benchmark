@@ -1,6 +1,6 @@
 ---
-title: "Results"
-permalink: "/results/"
+title: "Leaderboard"
+permalink: "/leaderboard/"
 layout: page
 ---
 
