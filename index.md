@@ -2,9 +2,6 @@
 layout: page
 title: "MESS – Multi-Domain Evaluation of Semantic Segmentation"
 ---
-<head>
-<link rel="shortcut icon" type="image/png" href="favicon.png">
-</head>
 
 The MESS benchmark enables a holistic evaluation of semantic segmentation models on a variety of domains and datasets.
 The collection is based on a developed taxonomy which describes the semantic segmentation task space along six dimensions. 
