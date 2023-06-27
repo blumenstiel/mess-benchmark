@@ -59,7 +59,8 @@ We provide random and best supervised results as a lower and upper bound.
 
 ## Visual oracle prompts
 
-Results with visual oracle prompts in a point-to-mask or box-to-mask setting. See our paper for details.
+Additionally to langugage guided mdoels, we evaluated SAM using visual oracle prompts in a point-to-mask or box-to-mask setting. 
+An oracle point or box is provided for each connected segment. See our paper for details.
 
 ### Domain results
 

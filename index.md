@@ -1,16 +1,26 @@
 ---
 layout: page
-title: "Multi-Domain Evaluation of Semantic Segmentation (MESS)"
+title: "MESS – Multi-Domain Evaluation of Semantic Segmentation"
 ---
 
-The MESS benchmark enables a holistic evaluation of semantic segmentation models on a variety of domains and datasets. 
-The collection is based on a developed taxonomy and 120 classified datasets. 
-The 22 selected MESS datasets are highlighted bold in the following figure. 
-You find details of the datasets, including links and licences, in this [overview](https://github.com/blumenstiel/MESS/blob/main/mess/DATASETS.md#dataset-overview).    
+The MESS benchmark enables a holistic evaluation of semantic segmentation models on a variety of domains and datasets.
+The collection is based on a developed taxonomy which describes the semantic segmentation task space along six dimensions. 
+We classified 120 datasets according to the taxonomy, visualized in the following figure.
+The 22 selected MESS datasets, highlighted with bold lines, cover all identified characteristics and are various domains, including earth monitoring, medicine, engineering, and biology. 
+You find details of the datasets, including links and licences, in this [overview](https://github.com/blumenstiel/MESS/blob/main/mess/DATASETS.md#dataset-overview) and our paper.    
 
 <center>
 <img src="assets/images/classifications_lines.svg">
 </center>
+
+
+### Why MESS?
+
+Zero-shot semantic segmentation models are regularly trained on COCO Stuff, a dataset including common scenes and classes. 
+The standard evaluation of these models include ADE20K, Pascal Context, and Pascal VOC. 
+The evaluation datasets are from the same domain as the training data and therefore only test an in-domain transfer setting. 
+With MESS, we provide a benchmark that enables a holistic evaluation of the generalization capabilities in a variety of other domains. 
+The MESS evaluation is currently focused on zero-shot transfer models – with potential extensions to few-shot or many-shot settings.
 
 ---
 
@@ -26,7 +36,7 @@ import mess.datasets
 
 ## Benchmark results
 
-You find the results of all evaluated models in the [leaderboard](https://blumenstiel.github.io/mess-benchmark/leaderboard/).
+You find the results of all evaluated models in the [leaderboard](https://blumenstiel.github.io/mess-benchmark/leaderboard/). A more detailed analysis is provided in our paper.   
 
 <center>
 <img src="assets/images/radar_plot_split_all_log.svg">
@@ -36,7 +46,7 @@ You find the results of all evaluated models in the [leaderboard](https://blumen
 
 ## Paper
 
-**<center>What a MESS: Multi-Domain Evaluation of Zero-Shot Semantic Segmentation</center>**
+**<center>[What a MESS: Multi-Domain Evaluation of Zero-Shot Semantic Segmentation](https://arxiv.org)</center>**
 
 <center>Benedikt Blumenstiel*,  Johannes Jakubik*,  Hilde Kühne,  Michael Vössing</center>
 
@@ -50,6 +60,7 @@ Please cite our paper if you use the MESS benchmark.
 @article{MESSBenchmark2023,
   title={What a MESS: Multi-domain Evaluation of Zero-shot Semantic Segmentation},
   author={Blumenstiel, Benedikt and Jakubik, Johannes and Kühne, Hilde and Vössing, Michael},
+  journal={arXiv preprint arXiv:XXXX.XXXXX},
   year={2023}
 }
 ```
