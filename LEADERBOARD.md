@@ -3,6 +3,9 @@ title: "Leaderboard"
 permalink: "/leaderboard/"
 layout: page
 ---
+<head>
+<link rel="shortcut icon" type="image/png" href="favicon.png">
+</head>
 
 Our evaluation currently focus on zero-shot transfer models as they are designed to generalize to unseen datasets. Links to the models are provided at the end of the page. 
 The results include mIoU values averaged by the dataset domains as well as for each dataset separate.
