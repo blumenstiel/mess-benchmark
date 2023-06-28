@@ -17,7 +17,7 @@ minimal: true             # use a dark header
 navigation:                # accepts {file, title, url, icon, sidebaricon}
 #  - {file: "DATASETS.md"}
   - {file: "LEADERBOARD.md"}
-  - {title: Paper, url: "https://arxiv.org/"}
+  - {title: Paper, url: "https://arxiv.org/abs/2306.15521"}
   - {title: Toolkit, url: "https://github.com/blumenstiel/MESS"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons

@@ -46,7 +46,7 @@ You find the results of all evaluated models in the [leaderboard](https://blumen
 
 ## Paper
 
-[**<center>What a MESS: Multi-Domain Evaluation of Zero-Shot Semantic Segmentation</center>**](https://arxiv.org)
+[**<center>What a MESS: Multi-Domain Evaluation of Zero-Shot Semantic Segmentation</center>**](https://arxiv.org/abs/2306.15521)
 
 <center>Benedikt Blumenstiel*,  Johannes Jakubik*,  Hilde Kühne,  Michael Vössing</center>
 
@@ -60,7 +60,7 @@ Please cite our paper if you use the MESS benchmark and send us your results to 
 @article{MESSBenchmark2023,
   title={What a MESS: Multi-domain Evaluation of Zero-shot Semantic Segmentation},
   author={Blumenstiel, Benedikt and Jakubik, Johannes and Kühne, Hilde and Vössing, Michael},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  journal={arXiv preprint arXiv:2306.15521},
   year={2023}
 }
 ```
