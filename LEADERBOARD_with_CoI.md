@@ -1,9 +1,3 @@
----
-title: "Leaderboard"
-permalink: "/leaderboard/"
-layout: page
----
-
 ## Zero-shot semantic segmentation
 
 Our evaluation currently focus on zero-shot transfer models as they are designed to generalize to unseen datasets. Links to the models are provided at the end of the page.
