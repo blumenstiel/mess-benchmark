@@ -60,7 +60,7 @@ Please cite our paper if you use the MESS benchmark and send us your results to 
 @article{MESSBenchmark2023,
   title={What a MESS: Multi-domain Evaluation of Zero-shot Semantic Segmentation},
   author={Blumenstiel, Benedikt and Jakubik, Johannes and Kühne, Hilde and Vössing, Michael},
-  journal={arXiv preprint arXiv:2306.15521},
+  journal={Advances in Neural Information Processing Systems},
   year={2023}
 }
 ```
