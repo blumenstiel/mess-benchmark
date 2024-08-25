@@ -7,7 +7,7 @@ The MESS benchmark enables a holistic evaluation of semantic segmentation models
 The collection is based on a developed taxonomy which describes the semantic segmentation task space along six dimensions. 
 We classified 120 datasets according to the taxonomy, visualized in the following figure.
 The 22 selected MESS datasets, highlighted with bold lines, cover all identified characteristics and are various domains such as earth monitoring, medicine, or engineering. 
-You find details of the datasets, including links and licences, in this [overview](https://github.com/blumenstiel/MESS/blob/main/mess/DATASETS.md#dataset-overview).    
+You find details of the datasets, including links and licences, in this [overview](https://github.com/blumenstiel/MESS/blob/main/DATASETS.md#dataset-overview).    
 
 <center>
 <img src="assets/images/classifications_lines.svg">
@@ -26,11 +26,23 @@ The MESS evaluation is currently focused on zero-shot transfer – with potentia
 
 ## Toolkit
 
-The [toolkit](https://github.com/blumenstiel/MESS) includes scripts for easy preparation and evaluation of the MESS benchmark. The toolkit uses [detectron2](https://github.com/facebookresearch/detectron2), which enables the registration of all datasets with just one extra line of code:
-    
+The [toolkit](https://github.com/blumenstiel/MESS) includes scripts for easy preparation and evaluation of the MESS benchmark and can be installed with: 
+```shell
+pip install mess-benchmark
+```
+
+All datasets are automatically registered in a dataset catalog with just one line of code:
 ```python
 import mess.datasets
 ```
+
+If you are using [detectron2](https://github.com/facebookresearch/detectron2), `mess` registers the datasets in the existing `DatasetCatalog`. 
+Otherwise, a new catalog is created and datasets can directly be used via a custom dataset class.
+
+```python
+from mess.datasets.TorchvisionDataset import TorchvisionDataset
+dataset = TorchvisionDataset('<dataset_name>')
+```    
 
 ---
 
